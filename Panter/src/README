@@ -1,3 +1,4 @@
 just the compile command
 
-$ gcc ./src/lib.c ../includes/elf.h ../includes/layout_mapping.h ./src/layout_mapping.c ./src/process_elf.c -shared -fPIC -Wall -o panter.so
+$  gcc ./src/lib.c ./src/layout_mapping.c ./src/process_elf.c -shared -fPIC -Wall -o panter.so -D PANTER_SEPARATE
+set -D PANTER_SEPARATE if you don't intend on using the build with Raptor packer
