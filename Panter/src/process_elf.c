@@ -192,7 +192,6 @@ void remove_shstrtab(struct elf_struct *target_elf) {
 	for (int i = 0; i < target_elf->ehdr->e_shnum; i++) {
 		current = target_elf->sec.shdr[i];
 		if (current.sh_type == SHT_DYNSYM) {
-			// DONT WANT TO FUCK WITH __libc_start_main
 
 			for (int l = 0; l < (current.sh_size / sizeof(Elf_Sym)); l++) {
 				char *symstr = &target_elf->dyn.dynsym_str[target_elf->dyn.dynsym_tab[l].st_name];
