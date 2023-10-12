@@ -196,7 +196,6 @@ error_t parse_the_stub(struct elf_struct *stub, char *stub_filename) {
 }
 
 
-// *!*!*!* Free() shall not forget a fucking free() *!*!*!*
 // Different function - how else would remake the array size without malloc
 data_tmp_t *create_stub_struct(size_t size, int nmemb) {
 	data_tmp_t *data_tmp = malloc(sizeof(data_tmp_t));
