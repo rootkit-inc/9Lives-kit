@@ -1,0 +1,3 @@
+just the compile command
+
+$ gcc ./src/lib.c ../includes/elf.h ../includes/layout_mapping.h ./src/layout_mapping.c ./src/process_elf.c -shared -fPIC -Wall -o panter.so
