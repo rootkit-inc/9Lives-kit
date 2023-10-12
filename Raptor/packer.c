@@ -82,7 +82,7 @@ int main(int argc, char *argv[]) {
 
 	// Compile the stub
 	// if (create_stub_file(&target_elf, STUB_OUTPUT_FILENAME, orig_size, shnum) == -1)
-	// 	DIE("@%s {YOU GOT ME FUCKED!}", __FUNCTION__);
+	// 	DIE("@%s {well..}", __FUNCTION__);
 
 	// remove_shstrtab(&target_elf);
 	// if (err.num != ALL_GOOD)
