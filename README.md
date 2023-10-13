@@ -1,4 +1,4 @@
-# 9Lives-kit
+# 9Lives-kit (x86_64)
 ##### -early WIP
 > This is a home project I did (It's a PoC) -for GOT poisoning (Panter), via LD_PRELOAD to inject code - which seems as most reasonable if you do not have root.
 
